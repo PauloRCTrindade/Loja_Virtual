@@ -3,23 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/style.css">
   
-  <title>Conectados Com a Graça</title>
+  
+  {% block head %}
+  <title>Dika Fashion</title>
+  {% endblock %}
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
   
 </head>
 <body>
-  <header>
-    <section>
-      <div class="menu">
-        <a href="/home">Home</a>
-        <a href="/membros">Membros</a>
-        <a href="/create">Novo Membro</a>
-      </div>
-    </section>
-  </header>
+
+  {% include "parts/header.njk" %}
+  
   {% block content%}{% endblock %}
 
-  <script src="scripts.js"></script>
+  {% include "parts/footer.njk" %}
+
+  
 </body>
 </html>

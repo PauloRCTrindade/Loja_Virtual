@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap');
+
+:root{
+  --prmary-color: #f9f9f9;
+  --secundary-color: #000000;
+  --logo-color:#912c9e;
+  --footer-color: #dfdfdf;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  text-decoration: none;
+  list-style-type: none;
+  border: none;
+}
+
+html,body{
+  min-height: 100vh;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+
+  background-color: var(--prmary-color);
+}
+
+header{
+background-color:   var(--prmary-color);
+color: white;
+
+width: 100%;
+padding: 32px 0;
+
+text-align: center;
+}
+
+header div.container{
+  
+  display: grid;
+  grid-template-columns: 220px auto 280px;
+  align-items: center;
+  grid-gap: 24px;
+}
+
+header div.container a{
+  justify-self: start;
+}
+
+/* LOGO */
+
+.logo h1{
+  color:var(--secundary-color);
+  font-size: 36px;
+  line-height: 46px;
+}
+.logo h2{
+  color:var(--logo-color);
+  font-size: 46px;
+  line-height: 46px;
+  font-family: 'Monsieur La Doulaise', cursive;
+}
+
+/* HEADER SEARCH */
+
+.search input{
+  width: 100%;
+  padding: 8px 16px;
+  border-radius: 2px;
+  font-size: 16px;
+
+}
+
+/* PRIMARY MENU */
+
+nav.primary ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav.primary ul li a{
+  display: flex;
+  align-items: center;
+  color: var(--logo-color);
+}
+nav.primary ul li a i{
+  margin-right: 8px;
+}
+
+
+
+
+footer{background-color: var(--footer-color);
+  
+width: 100%;
+padding: 32px 0;
+
+text-align: center;
+}
